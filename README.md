@@ -2,7 +2,7 @@
 
 A comprehensive RESTful API for a product catalog system designed to power e-commerce platforms. This API provides robust endpoints for managing products, categories, inventory, and reporting.
 
-![Product Catalog API Swagger UI Overview](./docs/images/swagger-overview.png)
+![Product Catalog API Swagger UI Overview](./docs:images/swagger-endpoints.png)
 
 ## Table of Contents
 
