@@ -43,7 +43,7 @@ A comprehensive RESTful API for a product catalog system designed to power e-com
 ## Project Structure
 
 ```
-product-catalog-api/
+Product-Catalog-API/
 ├── src/
 │   ├── controllers/      # Request handlers
 │   ├── models/           # Database models
