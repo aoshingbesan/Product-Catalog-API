@@ -2,7 +2,7 @@
 
 A comprehensive RESTful API for a product catalog system designed to power e-commerce platforms. This API provides robust endpoints for managing products, categories, inventory, and reporting.
 
-![Product Catalog API Swagger UI Overview](./docs:images/swagger-endpoints.png)
+![Product Catalog API Swagger UI Overview](./images/swagger-endpoints.png)
 
 ## Table of Contents
 
@@ -97,7 +97,7 @@ product-catalog-api/
 
 The application uses MongoDB as its database. Here's a view of our MongoDB Compass interface showing our collections:
 
-![MongoDB Compass Collections](./docs/images/mongodb-compass.png)
+![MongoDB Compass Collections](./images/Database%20Compass.png)
 
 ### Collections Overview:
 - **products**: Stores product information
@@ -112,7 +112,7 @@ The API is documented using Swagger/OpenAPI. Once the server is running, you can
 http://localhost:3000/api-docs
 ```
 
-![Swagger UI Endpoints](./docs/images/swagger-endpoints.png)
+![Swagger UI Endpoints](./images/swagger-endpoints.png)
 
 The documentation provides a complete overview of all available endpoints, request/response formats, and allows you to test the API directly from the browser.
 
@@ -120,8 +120,8 @@ The documentation provides a complete overview of all available endpoints, reque
 
 Here are screenshots of some key API endpoints in action:
 
-![API Endpoint Example 1](./docs/images/api-endpoint-1.png)
-![API Endpoint Example 2](./docs/images/api-endpoint-2.png)
+![API Endpoint Example 1](./images/api-endpoint-1.png%20.png)
+![API Endpoint Example 2](./images/api-endpoint2-.png%20.png)
 
 ### Products
 
