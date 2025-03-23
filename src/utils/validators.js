@@ -197,3 +197,11 @@ const inventoryTransactionValidationRules = [
     .optional()
     .trim(),
 ];
+
+module.exports = {
+  productValidationRules,
+  variantValidationRules,
+  categoryValidationRules,
+  inventoryTransactionValidationRules,
+  isValidObjectId
+};

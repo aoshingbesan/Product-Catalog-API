@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
+const path = require('path');
 
 // Database connection
 require('./config/db');
@@ -13,8 +14,16 @@ const categoryRoutes = require('./routes/categoryRoutes');
 const inventoryRoutes = require('./routes/inventoryRoutes');
 const reportRoutes = require('./routes/reportRoutes');
 
-// Import middleware
-const errorHandler = require('./middleware/errorHandler');
+// Create a simple error handler middleware directly here to avoid the import issue
+const errorHandler = (err, req, res, next) => {
+  const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
+  
+  res.status(statusCode);
+  res.json({
+    message: err.message,
+    stack: process.env.NODE_ENV === 'production' ? null : err.stack,
+  });
+};
 
 const app = express();
 
@@ -33,7 +42,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ['./src/routes/*.js'], // Path to the API routes
+  apis: [path.join(__dirname, './routes/*.js')], // Using absolute path
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);

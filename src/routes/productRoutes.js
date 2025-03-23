@@ -285,7 +285,8 @@ router.get('/:id', getProductById);
  *       400:
  *         description: Invalid input
  */
-router.post('/', productValidationRules, validateRequest, createProduct);
+router.post('/:id/variants', variantValidationRules, validateRequest, addProductVariant);
+
 
 /**
  * @swagger
