@@ -322,4 +322,4 @@ curl -X POST http://localhost:3000/api/inventory/update \
 
 ---
 
-© 2023 Product Catalog API. All rights reserved.
+© 2025 Product Catalog API. All rights reserved.
